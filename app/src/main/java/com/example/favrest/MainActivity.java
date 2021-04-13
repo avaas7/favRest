@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText enterFileName;
     private TextView showUploads;
     private ProgressBar progressBar;
+    private String pull = "pull request";
 
     private StorageReference mStorageRef;
     private DatabaseReference mDatabaseRef;
