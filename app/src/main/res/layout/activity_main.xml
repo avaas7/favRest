@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/choose_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE FILE"
+        />
+
+    <EditText
+        android:id="@+id/enter_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/choose_file"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter file name"/>
+
+    <ImageButton
+        android:id="@+id/chosen_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/choose_file"
+        android:layout_above="@+id/progress_bar"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        tools:src="@tools:sample/avatars"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_above="@+id/upload_button"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <TextView
+        android:id="@+id/show_uploads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Uploads"
+        android:layout_toEndOf="@+id/upload_button"
+        android:layout_alignBaseline="@+id/upload_button"
+        android:layout_marginLeft="16dp"
+        android:textSize="18dp"/>
+
+
+
+</RelativeLayout>
